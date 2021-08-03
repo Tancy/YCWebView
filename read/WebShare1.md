@@ -10,31 +10,6 @@
 
 
 
-### 01.loadUrl到底做了什么
-- WebView.loadUrl(url)加载网页做了什么？
-    - 加载网页是一个复杂的过程，大概需要执行以下一些操作，例如：
-    - 加载网页前，进行webView初始化，setting配置，重制WebView状态(重定向状态，回退栈等)，业务状态(比如进度条，是否显示分享按钮等)
-    - 加载网页前，根据不同的域拼接本地客户端的参数，包括基本的机型信息、版本信息、登录信息以及埋点使用的Refer信息等。
-    - 开始执行页面加载操作时，可以设置获取H5页面标题，加载进度，开始加载，加载完成，以及加载error等不同的状态。
-- 加载页面的过程中回调哪些方法？
-    - WebChromeClient.onReceivedTitle(webview, title)，用来设置标题。需要注意的是，在部分Android系统版本中可能会回调多次这个方法，而且有时候回调的title是一个url，客户端可以针对这种情况进行特殊处理，避免在标题栏显示不必要的链接。
-    - WebChromeClient.onProgressChanged(webview, progress)，根据这个回调，可以控制进度条的进度（包括显示与隐藏）。一般情况下，想要达到100%的进度需要的时间较长（特别是首次加载），用户长时间等待进度条不消失必定会感到焦虑，影响体验。其实当progress达到80的时候，加载出来的页面已经基本可用了。事实上大部分都会提前隐藏进度条，让用户以为网页加载很快。
-    - WebViewClient.shouldInterceptRequest(webview, request)，无论是普通的页面请求(使用GET/POST)，还是页面中的异步请求，或者页面中的资源请求，都会回调这个方法，给开发一次拦截请求的机会。在这个方法中，可以进行静态资源的拦截并使用缓存数据代替，也可以拦截页面，使用自己的网络框架来请求数据。
-    - WebViewClient.shouldOverrideUrlLoading(webview, request)，如果遇到了重定向，或者点击了页面中的a标签实现页面跳转，那么会回调这个方法。可以说这个是WebView里面最重要的回调之一。
-    - WebViewClient.onReceivedError(webview,handler,error)，加载页面的过程中发生了错误，会回调这个方法。主要是http错误以及ssl错误。在这两个回调中，我们可以进行异常上报，监控异常页面、过期页面，及时反馈给运营或前端修改。在处理ssl错误时，遇到不信任的证书可以进行特殊处理，例如对域名进行判断，针对自己公司的域名“放行”，防止进入丑陋的错误证书页面。
-- 加载页面结束回调哪些方法
-    - 会回调WebViewClient.onPageFinished(webview,url)。
-    - 这时候可以根据回退栈的情况判断是否显示关闭WebView按钮。通过mActivityWeb.canGoBackOrForward(-1)判断是否可以回退。
-- 加载h5页面大概流程
-    - dns域名解析(将域名解析成ip地址，比较耗时)
-    - TCP的三次握手
-    - 建立TCP连接后发起HTTP请求
-    - 服务器响应HTTP请求
-    - 浏览器解析html代码
-    - 同时请求html代码中的资源（如js、css、图片等），注意html中资源是串行
-    - 最后浏览器对页面进行渲染并呈现给用户
-
-
 
 ### 02.触发加载网页的行为
 - 触发加载网页的行为主要有两种方式：
