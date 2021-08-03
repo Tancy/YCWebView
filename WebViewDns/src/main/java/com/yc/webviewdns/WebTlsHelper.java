@@ -1,11 +1,11 @@
-package com.ycbjie.webviewlib.tls;
+package com.yc.webviewdns;
 
 import android.text.TextUtils;
 
 import com.alibaba.sdk.android.httpdns.HttpDnsService;
 import com.tencent.smtt.export.external.interfaces.WebResourceRequest;
 import com.tencent.smtt.export.external.interfaces.WebResourceResponse;
-import com.ycbjie.webviewlib.utils.X5LogUtils;
+import com.yc.webviewutils.X5LogUtils;
 import com.ycbjie.webviewlib.view.X5WebView;
 
 import java.io.IOException;

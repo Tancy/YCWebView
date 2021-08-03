@@ -22,9 +22,6 @@ import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.view.View;
 import android.view.ViewGroup;
-
-import com.alibaba.sdk.android.httpdns.HttpDns;
-import com.alibaba.sdk.android.httpdns.HttpDnsService;
 import com.tencent.smtt.sdk.ValueCallback;
 import com.tencent.smtt.sdk.WebBackForwardList;
 import com.tencent.smtt.sdk.WebChromeClient;
@@ -60,7 +57,6 @@ public class X5WebView extends BridgeWebView {
     private X5WebViewClient x5WebViewClient;
     private X5WebChromeClient x5WebChromeClient;
     private volatile boolean mInitialized;
-    private HttpDnsService httpDns;
     public static boolean isLongClick = true;
 
     @Override
@@ -92,29 +88,10 @@ public class X5WebView extends BridgeWebView {
         //设置可以点击
         this.getView().setClickable(true);
         mInitialized = true;
-        //初始化https+dns域名解析功能，如果没有初始化，则默认不使用
-        initSetHttpDns();
         initListener();
     }
     
-    /**
-     * 初始化https+dns优化，目前已经集成阿里开源的httpdns库，已经非常稳定
-     * 具体更加详细内容，可以参考阿里httpdns官方文档
-     */
-    private void initSetHttpDns() {
-        if (X5WebUtils.isHttpDns){
-            // 初始化http + dns
-            httpDns = HttpDns.getService(X5WebUtils.getApplication(), X5WebUtils.accountID);
-            // 预解析热点域名
-            httpDns.setPreResolveHosts(X5WebUtils.host);
-            // 允许过期IP以实现懒加载策略
-            httpDns.setExpiredIPEnabled(true);
-        }
-    }
 
-    public HttpDnsService getHttpDns() {
-        return httpDns;
-    }
 
     /**
      * 做一些公共的初始化操作

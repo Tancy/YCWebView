@@ -1,9 +1,10 @@
-package com.ycbjie.webviewlib.tls;
+package com.yc.webviewdns;
 
 import android.net.SSLCertificateSocketFactory;
 import android.os.Build;
 
-import com.ycbjie.webviewlib.utils.X5LogUtils;
+
+import com.yc.webviewutils.X5LogUtils;
 
 import java.io.IOException;
 import java.net.InetAddress;

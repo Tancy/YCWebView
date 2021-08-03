@@ -17,19 +17,15 @@ package com.ycbjie.webviewlib.client;
 
 import android.content.Context;
 import android.os.Build;
-import android.support.annotation.RequiresApi;
 import android.text.TextUtils;
 
-import com.alibaba.sdk.android.httpdns.HttpDnsService;
 import com.tencent.smtt.export.external.interfaces.WebResourceRequest;
-import com.tencent.smtt.export.external.interfaces.WebResourceResponse;
 import com.tencent.smtt.sdk.WebView;
 import com.yc.webviewutils.EncodeUtils;
 import com.yc.webviewutils.X5LogUtils;
 import com.ycbjie.webviewlib.base.X5WebViewClient;
 import com.ycbjie.webviewlib.bridge.BridgeUtil;
 import com.ycbjie.webviewlib.bridge.WebJsMessage;
-import com.ycbjie.webviewlib.tls.WebTlsHelper;
 import com.yc.webviewutils.X5WebUtils;
 import com.ycbjie.webviewlib.view.BridgeWebView;
 import com.ycbjie.webviewlib.view.X5WebView;
@@ -46,10 +42,8 @@ import com.ycbjie.webviewlib.view.X5WebView;
  */
 public class JsX5WebViewClient extends X5WebViewClient {
 
-    private Context context;
-    private X5WebView mWebView;
-    private HttpDnsService httpDns ;
-    private WebTlsHelper tlsHelper;
+    public Context context;
+    public X5WebView mWebView;
 
     /**
      * 构造方法
@@ -61,10 +55,6 @@ public class JsX5WebViewClient extends X5WebViewClient {
         super(webView, context);
         this.mWebView = webView;
         this.context = context;
-        if (X5WebUtils.isHttpDns && httpDns==null){
-            httpDns = webView.getHttpDns();
-            tlsHelper = new WebTlsHelper(httpDns);
-        }
     }
 
     /**
@@ -176,25 +166,6 @@ public class JsX5WebViewClient extends X5WebViewClient {
             }
             mWebView.setStartupMessage(null);
         }
-    }
-
-    /**
-     * 此方法添加于API21，调用于非UI线程，拦截资源请求并返回数据，返回null时WebView将继续加载资源
-     *
-     * 其中 WebResourceRequest 封装了请求，WebResourceResponse 封装了响应
-     * 封装了一个Web资源的响应信息，包含：响应数据流，编码，MIME类型，API21后添加了响应头，状态码与状态描述
-     * @param webView                           view
-     * @param webResourceRequest                request，添加于API21，封装了一个Web资源的请求信息，
-     *                                          包含：请求地址，请求方法，请求头，是否主框架，是否用户点击，是否重定向
-     * @return
-     */
-    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
-    @Override
-    public WebResourceResponse shouldInterceptRequest(WebView webView, WebResourceRequest webResourceRequest) {
-        if (tlsHelper!=null){
-            return tlsHelper.shouldInterceptRequest(mWebView,webResourceRequest);
-        }
-        return super.shouldInterceptRequest(webView, webResourceRequest);
     }
 
 }
