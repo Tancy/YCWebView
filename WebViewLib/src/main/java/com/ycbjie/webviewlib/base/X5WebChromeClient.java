@@ -34,12 +34,11 @@ import com.tencent.smtt.export.external.interfaces.PermissionRequest;
 import com.tencent.smtt.sdk.ValueCallback;
 import com.tencent.smtt.sdk.WebStorage;
 import com.tencent.smtt.sdk.WebView;
+import com.yc.webviewutils.X5LogUtils;
+import com.yc.webviewvideo.VideoWebChromeClient;
+import com.yc.webviewvideo.VideoWebListener;
 import com.ycbjie.webviewlib.inter.InterWebListener;
-import com.ycbjie.webviewlib.inter.VideoWebListener;
-import com.ycbjie.webviewlib.utils.X5LogUtils;
 import com.yc.webviewutils.X5WebUtils;
-import com.ycbjie.webviewlib.video.VideoWebChromeClient;
-
 import static android.app.Activity.RESULT_OK;
 
 /**

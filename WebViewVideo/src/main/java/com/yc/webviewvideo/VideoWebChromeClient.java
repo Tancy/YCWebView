@@ -1,4 +1,4 @@
-package com.ycbjie.webviewlib.video;
+package com.yc.webviewvideo;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -10,8 +10,7 @@ import android.widget.FrameLayout;
 
 import com.tencent.smtt.export.external.interfaces.IX5WebChromeClient;
 import com.tencent.smtt.sdk.WebChromeClient;
-import com.ycbjie.webviewlib.inter.VideoWebListener;
-import com.ycbjie.webviewlib.utils.X5LogUtils;
+import com.yc.webviewutils.X5LogUtils;
 
 /**
  * <pre>

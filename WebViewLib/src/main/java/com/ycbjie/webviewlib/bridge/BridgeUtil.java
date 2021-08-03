@@ -18,7 +18,7 @@ package com.ycbjie.webviewlib.bridge;
 import android.content.Context;
 
 import com.tencent.smtt.sdk.WebView;
-import com.ycbjie.webviewlib.utils.X5LogUtils;
+import com.yc.webviewutils.X5LogUtils;
 
 import java.io.BufferedReader;
 import java.io.IOException;

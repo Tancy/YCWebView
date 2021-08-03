@@ -16,9 +16,9 @@ import com.tencent.smtt.sdk.WebIconDatabase;
 import com.tencent.smtt.sdk.WebStorage;
 import com.tencent.smtt.sdk.WebView;
 import com.tencent.smtt.sdk.WebViewDatabase;
+import com.yc.webviewutils.FastClickUtils;
+import com.yc.webviewutils.X5LogUtils;
 import com.ycbjie.webviewlib.base.RequestInfo;
-import com.ycbjie.webviewlib.utils.FastClickUtils;
-import com.ycbjie.webviewlib.utils.X5LogUtils;
 import com.yc.webviewutils.X5WebUtils;
 
 import java.lang.ref.WeakReference;

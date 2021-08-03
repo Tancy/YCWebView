@@ -22,13 +22,13 @@ import android.os.SystemClock;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 
+import com.yc.webviewutils.X5LogUtils;
 import com.ycbjie.webviewlib.bridge.BridgeUtil;
 import com.ycbjie.webviewlib.bridge.DefaultHandler;
 import com.ycbjie.webviewlib.bridge.WebJsMessage;
 import com.ycbjie.webviewlib.inter.BridgeHandler;
 import com.ycbjie.webviewlib.inter.CallBackFunction;
 import com.ycbjie.webviewlib.inter.WebViewJavascriptBridge;
-import com.ycbjie.webviewlib.utils.X5LogUtils;
 import com.yc.webviewutils.X5WebUtils;
 
 import java.net.URLEncoder;

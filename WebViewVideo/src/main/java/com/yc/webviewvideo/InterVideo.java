@@ -1,4 +1,4 @@
-package com.ycbjie.webviewlib.video;
+package com.yc.webviewvideo;
 
 
 

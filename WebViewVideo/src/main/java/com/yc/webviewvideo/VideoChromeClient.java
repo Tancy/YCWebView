@@ -1,4 +1,4 @@
-package com.ycbjie.webviewlib.video;
+package com.yc.webviewvideo;
 
 import android.app.Activity;
 import android.content.Context;
@@ -7,8 +7,7 @@ import android.view.View;
 import com.tencent.smtt.export.external.interfaces.IX5WebChromeClient;
 import com.tencent.smtt.sdk.WebChromeClient;
 import com.tencent.smtt.sdk.WebView;
-import com.ycbjie.webviewlib.inter.VideoWebListener;
-import com.ycbjie.webviewlib.utils.X5LogUtils;
+import com.yc.webviewutils.X5LogUtils;
 
 /**
  * <pre>

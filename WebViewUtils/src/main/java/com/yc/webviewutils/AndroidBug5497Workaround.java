@@ -1,4 +1,4 @@
-package com.ycbjie.webviewlib.tools;
+package com.yc.webviewutils;
 
 import android.app.Activity;
 import android.graphics.Rect;

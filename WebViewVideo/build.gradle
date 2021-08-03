@@ -26,5 +26,9 @@ android {
 }
 
 dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:28.0.0'
+    //查询地址：https://mvnrepository.com/artifact/com.tencent.tbs.tbssdk/sdk?repo=jcenter
+    api 'com.tencent.tbs.tbssdk:sdk:43967'
+    implementation project(path: ':WebViewUtils')
 }

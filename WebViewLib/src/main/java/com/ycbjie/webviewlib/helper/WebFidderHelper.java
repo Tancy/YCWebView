@@ -4,7 +4,7 @@ import android.os.Bundle;
 
 import com.tencent.smtt.export.external.interfaces.WebResourceRequest;
 import com.tencent.smtt.export.external.interfaces.WebResourceResponse;
-import com.ycbjie.webviewlib.utils.X5LogUtils;
+import com.yc.webviewutils.X5LogUtils;
 import com.ycbjie.webviewlib.view.X5WebView;
 
 import java.io.InputStream;

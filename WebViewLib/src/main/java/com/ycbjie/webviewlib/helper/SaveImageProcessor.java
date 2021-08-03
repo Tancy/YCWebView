@@ -27,10 +27,10 @@ import android.provider.MediaStore;
 import android.text.TextUtils;
 
 import com.tencent.smtt.sdk.WebView;
-import com.ycbjie.webviewlib.utils.EncodeUtils;
+import com.yc.webviewutils.EncodeUtils;
+import com.yc.webviewutils.ToastUtils;
+import com.yc.webviewutils.WebFileUtils;
 import com.ycbjie.webviewlib.utils.OkHttpUtils;
-import com.ycbjie.webviewlib.utils.ToastUtils;
-import com.ycbjie.webviewlib.utils.WebFileUtils;
 
 import java.io.File;
 import java.io.FileOutputStream;

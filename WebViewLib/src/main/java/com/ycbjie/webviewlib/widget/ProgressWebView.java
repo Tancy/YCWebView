@@ -24,6 +24,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.FrameLayout;
 
+import com.yc.webviewwidget.WebProgress;
 import com.ycbjie.webviewlib.R;
 import com.ycbjie.webviewlib.inter.DefaultWebListener;
 import com.yc.webviewutils.X5WebUtils;
