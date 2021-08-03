@@ -32,14 +32,14 @@ import com.tencent.smtt.sdk.WebHistoryItem;
 import com.tencent.smtt.sdk.WebSettings;
 import com.tencent.smtt.sdk.WebView;
 import com.tencent.smtt.sdk.WebViewClient;
+import com.yc.webviewutils.X5LogUtils;
 import com.ycbjie.webviewlib.base.X5WebChromeClient;
 import com.ycbjie.webviewlib.base.X5WebViewClient;
 import com.ycbjie.webviewlib.client.JsX5WebViewClient;
 import com.ycbjie.webviewlib.helper.SaveImageProcessor;
 import com.ycbjie.webviewlib.inter.InterValueCallback;
 import com.ycbjie.webviewlib.tools.WebViewException;
-import com.ycbjie.webviewlib.utils.X5LogUtils;
-import com.ycbjie.webviewlib.utils.X5WebUtils;
+import com.yc.webviewutils.X5WebUtils;
 
 import static android.os.Build.VERSION_CODES.KITKAT;
 

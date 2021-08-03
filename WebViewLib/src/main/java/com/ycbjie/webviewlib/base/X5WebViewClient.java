@@ -35,11 +35,11 @@ import com.tencent.smtt.export.external.interfaces.WebResourceRequest;
 import com.tencent.smtt.export.external.interfaces.WebResourceResponse;
 import com.tencent.smtt.sdk.WebView;
 import com.tencent.smtt.sdk.WebViewClient;
+import com.yc.webviewutils.EncodeUtils;
+import com.yc.webviewutils.X5LogUtils;
 import com.ycbjie.webviewlib.helper.WebSchemeIntent;
 import com.ycbjie.webviewlib.inter.InterWebListener;
-import com.ycbjie.webviewlib.utils.EncodeUtils;
-import com.ycbjie.webviewlib.utils.X5LogUtils;
-import com.ycbjie.webviewlib.utils.X5WebUtils;
+import com.yc.webviewutils.X5WebUtils;
 
 import java.util.Stack;
 

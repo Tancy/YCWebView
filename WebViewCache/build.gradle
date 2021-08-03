@@ -1,0 +1,35 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //okhttp库
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    //查询地址：https://mvnrepository.com/artifact/com.tencent.tbs.tbssdk/sdk?repo=jcenter
+    api 'com.tencent.tbs.tbssdk:sdk:43967'
+    implementation project(path: ':WebViewUtils')
+}

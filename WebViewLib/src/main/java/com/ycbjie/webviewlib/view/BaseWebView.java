@@ -19,7 +19,7 @@ import com.tencent.smtt.sdk.WebViewDatabase;
 import com.ycbjie.webviewlib.base.RequestInfo;
 import com.ycbjie.webviewlib.utils.FastClickUtils;
 import com.ycbjie.webviewlib.utils.X5LogUtils;
-import com.ycbjie.webviewlib.utils.X5WebUtils;
+import com.yc.webviewutils.X5WebUtils;
 
 import java.lang.ref.WeakReference;
 import java.util.Map;

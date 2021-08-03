@@ -27,8 +27,8 @@ import android.view.View;
 import com.tencent.smtt.export.external.interfaces.WebResourceRequest;
 import com.tencent.smtt.sdk.WebView;
 import com.tencent.smtt.sdk.WebViewClient;
+import com.yc.webviewutils.X5LogUtils;
 import com.ycbjie.webviewlib.client.JsX5WebViewClient;
-import com.ycbjie.webviewlib.utils.X5LogUtils;
 
 import java.util.Map;
 

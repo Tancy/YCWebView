@@ -20,6 +20,8 @@ import android.content.Context;
 import android.content.pm.PackageManager;
 import android.os.Build;
 
+import com.yc.webviewutils.X5LogUtils;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;

@@ -9,7 +9,7 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 
 import com.tencent.smtt.sdk.TbsReaderView;
-import com.ycbjie.webviewlib.utils.X5LogUtils;
+import com.yc.webviewutils.X5LogUtils;
 
 /**
  * <pre>

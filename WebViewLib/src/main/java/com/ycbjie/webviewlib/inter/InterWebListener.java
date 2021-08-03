@@ -18,7 +18,7 @@ package com.ycbjie.webviewlib.inter;
 
 import android.support.annotation.IntRange;
 
-import com.ycbjie.webviewlib.utils.X5WebUtils;
+import com.yc.webviewutils.X5WebUtils;
 
 /**
  * <pre>

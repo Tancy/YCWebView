@@ -37,7 +37,7 @@ import com.tencent.smtt.sdk.WebView;
 import com.ycbjie.webviewlib.inter.InterWebListener;
 import com.ycbjie.webviewlib.inter.VideoWebListener;
 import com.ycbjie.webviewlib.utils.X5LogUtils;
-import com.ycbjie.webviewlib.utils.X5WebUtils;
+import com.yc.webviewutils.X5WebUtils;
 import com.ycbjie.webviewlib.video.VideoWebChromeClient;
 
 import static android.app.Activity.RESULT_OK;

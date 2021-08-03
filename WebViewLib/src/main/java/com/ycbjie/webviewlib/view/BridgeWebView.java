@@ -29,7 +29,7 @@ import com.ycbjie.webviewlib.inter.BridgeHandler;
 import com.ycbjie.webviewlib.inter.CallBackFunction;
 import com.ycbjie.webviewlib.inter.WebViewJavascriptBridge;
 import com.ycbjie.webviewlib.utils.X5LogUtils;
-import com.ycbjie.webviewlib.utils.X5WebUtils;
+import com.yc.webviewutils.X5WebUtils;
 
 import java.net.URLEncoder;
 import java.util.ArrayList;

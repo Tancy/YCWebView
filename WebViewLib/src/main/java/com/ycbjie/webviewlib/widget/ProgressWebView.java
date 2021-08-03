@@ -26,7 +26,7 @@ import android.widget.FrameLayout;
 
 import com.ycbjie.webviewlib.R;
 import com.ycbjie.webviewlib.inter.DefaultWebListener;
-import com.ycbjie.webviewlib.utils.X5WebUtils;
+import com.yc.webviewutils.X5WebUtils;
 import com.ycbjie.webviewlib.view.X5WebView;
 
 /**

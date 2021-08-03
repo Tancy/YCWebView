@@ -1,2 +1,6 @@
 include ':demo'
 include ':app', ':WebViewLib'
+include ':WebViewCache'
+include ':WebViewVideo'
+include ':WebViewWidget'
+include ':WebViewUtils'

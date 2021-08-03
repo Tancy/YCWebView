@@ -14,7 +14,7 @@ import com.tencent.smtt.sdk.WebView;
 import com.ycbjie.webviewlib.R;
 import com.ycbjie.webviewlib.inter.VideoWebListener;
 import com.ycbjie.webviewlib.utils.X5LogUtils;
-import com.ycbjie.webviewlib.utils.X5WebUtils;
+import com.yc.webviewutils.X5WebUtils;
 
 import java.util.HashSet;
 import java.util.Set;

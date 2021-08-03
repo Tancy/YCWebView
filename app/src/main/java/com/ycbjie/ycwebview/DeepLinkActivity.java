@@ -14,7 +14,6 @@ import android.view.ViewGroup;
 
 import com.tencent.smtt.export.external.interfaces.WebResourceRequest;
 import com.tencent.smtt.sdk.WebView;
-import com.ycbjie.webviewlib.base.X5WebViewClient;
 import com.ycbjie.webviewlib.client.JsX5WebViewClient;
 import com.ycbjie.webviewlib.inter.DefaultWebListener;
 import com.ycbjie.webviewlib.utils.X5WebUtils;

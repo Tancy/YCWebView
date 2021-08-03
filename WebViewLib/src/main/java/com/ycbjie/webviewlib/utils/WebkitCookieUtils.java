@@ -5,6 +5,7 @@ import android.os.Build;
 
 import com.tencent.smtt.sdk.CookieManager;
 import com.tencent.smtt.sdk.CookieSyncManager;
+import com.yc.webviewutils.X5LogUtils;
 
 import java.util.ArrayList;
 

@@ -30,7 +30,7 @@ import com.ycbjie.webviewlib.bridge.WebJsMessage;
 import com.ycbjie.webviewlib.tls.WebTlsHelper;
 import com.ycbjie.webviewlib.utils.EncodeUtils;
 import com.ycbjie.webviewlib.utils.X5LogUtils;
-import com.ycbjie.webviewlib.utils.X5WebUtils;
+import com.yc.webviewutils.X5WebUtils;
 import com.ycbjie.webviewlib.view.BridgeWebView;
 import com.ycbjie.webviewlib.view.X5WebView;
 
