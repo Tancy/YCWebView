@@ -213,6 +213,30 @@ public class DeepLinkActivity extends AppCompatActivity {
                     intent3.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     DeepLinkActivity.this.startActivity(intent3);
                     return true;
+                }else if(url.startsWith("pddopen:")){
+                    Intent intent3 = new Intent();
+                    intent3.setAction("android.intent.action.VIEW");
+                    Uri uri = Uri.parse(url);
+                    intent3.setData(uri);
+                    intent3.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    DeepLinkActivity.this.startActivity(intent3);
+                    return true;
+                }else if(url.startsWith("pinduoduo:")){
+                    Intent intent3 = new Intent();
+                    intent3.setAction("android.intent.action.VIEW");
+                    Uri uri = Uri.parse(url);
+                    intent3.setData(uri);
+                    intent3.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    DeepLinkActivity.this.startActivity(intent3);
+                    return true;
+                }else if(url.startsWith("openapp.jdmobile:")){
+                    Intent intent3 = new Intent();
+                    intent3.setAction("android.intent.action.VIEW");
+                    Uri uri = Uri.parse(url);
+                    intent3.setData(uri);
+                    intent3.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    DeepLinkActivity.this.startActivity(intent3);
+                    return true;
                 }else {
                     mWebView.loadUrl(url);
                     return true;
