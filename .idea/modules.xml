@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/XTWebView.iml" filepath="$PROJECT_DIR$/.idea/modules/XTWebView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/WebViewLib/XTWebView.WebViewLib.iml" filepath="$PROJECT_DIR$/.idea/modules/WebViewLib/XTWebView.WebViewLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/XTWebView.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/XTWebView.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/demo/XTWebView.demo.iml" filepath="$PROJECT_DIR$/.idea/modules/demo/XTWebView.demo.iml" />
+    </modules>
+  </component>
+</project>
